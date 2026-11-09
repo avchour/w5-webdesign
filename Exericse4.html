@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise4</title>
+    <style>
+    body {
+        margin: 0;
+    }
+
+    .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .small {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 50px;
+        color: white;
+        display: none;
+    }
+
+    .big {
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 100px;
+        color: white;
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .small {
+            display: inline-block;
+            background-color: red;
+        }
+
+        .big {
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 601px) {
+        .big {
+            display: inline-block;
+            background-color: green;
+        }
+
+        .small {
+            display: none;
+        }
+    }
+
+
+ 
+        </style>
+</head>
+<body>
+    <div class="container">
+        
+            <span class="small">I'm Small</span>
+            <span class="big">I'm Big</span>
+    </div>
+
+    <div>
+     
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2</title>
+
+    <style>
+body{
+    margin: 0;
+}
+
+        .container{
+            background: black;
+            margin: 0;
+            height: 5vh;
+            padding: 5px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            align-items: center;
+            justify-content: space-between;
+            display: flex;
+            
+            
+        }
+        .logo {
+            
+            margin-left: 30px;
+            color: aliceblue;
+            text-align: left;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: larger;
+
+
+            
+        }
+        .right {
+            color: aliceblue;
+            display: flex;
+            /* justify-content: space-evenly; */
+            cursor: pointer;
+           
+            
+            
+            gap: 24px;
+            /* flex-direction: row; */
+            flex-direction: end;
+            
+
+        }
+        .gg {
+            display: none;
+            color: aliceblue;
+            font-size: 24px;
+            cursor: pointer;
+            user-select: none;
+            margin-right: 20px;
+        }
+
+        @media (max-width:768px) {
+            .right {
+                display: none;
+            }
+            .gg{
+                display: block;
+            }
+        }
+
+
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Logo</div>
+        <div class="right">
+            <div>Home</div>
+            <div>About</div>
+            <div>Service</div>
+            <div>Contact</div>
+        </div>
+        <div class="gg">☰</div>
+        </div>
+    
+</body>
+</html>
